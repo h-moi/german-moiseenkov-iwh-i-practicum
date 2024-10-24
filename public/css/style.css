@@ -4,10 +4,13 @@ body, * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;  /* Neutral dark color for text */
 }
 
 h1 {
     margin: 1rem;
+    text-align: center;
+    color: #4D4D4D;
 }
 
 .cards {
@@ -21,13 +24,14 @@ h1 {
     flex-basis: 31%;
     margin: 1rem 0.4rem;
     padding: 1rem 0.4rem 2.5rem 0.4rem;
-    border: solid 1px lightgrey;
+    border: solid 1px #D3D3D3;
     border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card__email {
     font-size: 1rem;
+    color: #666;
 }
 
 .form-wrapper {
@@ -35,9 +39,10 @@ h1 {
     max-width: 768px;
     margin: 2rem auto;
     padding: 2rem;
-    border: solid 1px lightgrey;
+    border: solid 1px #D3D3D3;
     border-radius: 15px;
-    box-shadow: 3px 2px 6px lightgrey;
+    box-shadow: 3px 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #F9F9F9;
 }
 
 label, input {
@@ -48,11 +53,50 @@ label, input {
 
 input[type="text"] {
     padding: .25rem;
+    border: solid 1px #B0B0B0;
+    border-radius: 5px;
+    width: 100%;
 }
 
 input[type="submit"] {
-    background-color: lightgrey;
+    background-color: #A9A9A9;
     border: none;
+    color: white;
     padding: .375rem 1rem;
     margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #888;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #D3D3D3;
+    text-align: left;
+}
+
+th {
+    background-color: #EAEAEA;
+    color: #333;
+    font-weight: bold;
+}
+
+td {
+    background-color: #F7F7F7;
+    color: #555;
+}
+
+tr:nth-child(even) {
+    background-color: #EFEFEF;
 }
