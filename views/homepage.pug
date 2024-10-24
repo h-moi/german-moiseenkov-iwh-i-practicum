@@ -1,0 +1,22 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Custom Object Table
+
+
+        a(href="/update-cobj") Add to this table
+
+        table 
+            tr
+                th Specie's Name
+                th Specie's Galaxy Formation
+                th Specie's Behaviour Description
+            each contact in data
+                tr
+                    td #{contact.properties.customname}
+                    td #{contact.properties.specie_s_galaxy_formation}
+                    td #{contact.properties.specie_s_behavior_description}
