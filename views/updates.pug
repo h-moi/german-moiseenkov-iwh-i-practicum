@@ -1,0 +1,18 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Add a Galaxy Species
+        form(method="POST" action="/update-cobj")
+            label(for="customname") Specie's Name:
+            input(type="text" name="customname" id="customname")
+            label(for="specie_s_galaxy_formation") Galaxxy Formation where this specie is from:
+            input(type="text" name="specie_s_galaxy_formation" id="specie_s_galaxy_formation")
+            label(for="specie_s_behavior_description") Typical Behaviour of this Specie:
+            input(type="text" name="specie_s_behavior_description" id="specie_s_behavior_description")
+            input(type="submit" value="Submit")
+        
+        a(href="/") Return to the homepage
